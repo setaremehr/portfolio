@@ -11,17 +11,17 @@ function BackImage (props) {
     return(
         <Media className="justify-content-center mt-3"> 
   <img
-    width={350}
-    height={300}
-    className="ml-5 mt-3 mr-3 "
-    src="https://img.pngio.com/about-me-png-download-1100550-free-transparent-logo-png-download-about-me-png-900_460.jpg"
+    width={200}
+    height={400}
+    className="ml-5  mr-3 "
+    src="https://i.pinimg.com/564x/c4/9a/6b/c49a6b67559aad52f3208c5a0562d38b.jpg"
     alt="myPic"
   />
   <Media.Body className="justify-content-center py-5 ml-5 mt-5">
-    <h5 >Media Heading</h5>
-    <p>
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-      ante sollicitudin commodo. 
+    <h5 className="text-muted">Hi! I'm Setare 👋🏼</h5>
+    <p className="text-white pline">
+    My name is Setare Mehr I'm a 31 year old Full Stack Web Developer based in California ☀️
+    I describe myself as a passionate developer who loves coding, open source, and the web platform ❤️.
     </p>
   </Media.Body>
 </Media>
