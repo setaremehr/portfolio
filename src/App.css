@@ -1,3 +1,28 @@
+.jumbotron {
+  background-image: url(https://mymodernmet.com/wp/wp-content/uploads/2018/09/basic-color-theory-thumbnail.jpg);
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: initial;
+  padding-top: 50px;
+  /* font-weight: bold; */
+  margin-top: 150px;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 50px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  
+}
+p,h1,h2,h3 {
+background-color: rgba(62, 53, 62, 0.543);
+padding: 50px;
+letter-spacing: 5px;
+}
+.buttonsMe {
+  padding: 70 px;
+  background-color: rgba(62, 53, 62, 0.543);
+  color:lavenderblush;
+
+}
 .App {
   text-align: center;
 }
@@ -21,11 +46,11 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(216, 61, 61);
 }
 
 .App-link {
-  color: #61dafb;
+  color: #61fb69;
 }
 
 @keyframes App-logo-spin {
