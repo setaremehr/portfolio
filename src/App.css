@@ -17,6 +17,9 @@ background-color: rgba(62, 53, 62, 0.543);
 padding: 50px;
 letter-spacing: 5px;
 }
+.pline{
+  line-height: 200%;
+}
 .buttonsMe {
   padding: 70 px;
   background-color: rgba(62, 53, 62, 0.543);
