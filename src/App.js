@@ -1,17 +1,17 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
+
 
 // import Footer from './components/Footer';
 import MainPage from './pages/MainPage';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Portfolio from './pages/portfolio';
 
 class App extends React.Component {
-  
+
   constructor(props) {
     super(props);
     this.state = {
@@ -19,7 +19,8 @@ class App extends React.Component {
       headerLinks: [
         { title: 'Home', path: '/' },
         { title: 'About', path: '/about' },
-        { title: 'Contact', path: '/contact' }
+        { title: 'Contact', path: '/contact' },
+        { title: 'Portfolio', path: '/portfolio' }
       ],
       home: {
         image: '<Image/>'
@@ -29,37 +30,44 @@ class App extends React.Component {
       },
       contact: {
         title: 'Get In Touch'
+      },
+      portfolio: {
+        title: 'Here what I have done!'
       }
     }
   }
 
   render() {
     return (
+
       <Router>
-        <Container className="p-0" fluid={true}>
-          
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand>Setare Mehr</Navbar.Brand>
-
-            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
-            <Navbar.Collapse id="navbar-toggle">
-              <Nav className="ml-auto">
-                <Link className="nav-link" to="/">Home</Link>
-                <Link className="nav-link" to="/about">About</Link>
-                <Link className="nav-link" to="/contact">Contact</Link>
+            
+              <Nav fill variant="tabs" defaultActiveKey="/home">
+                <Nav.Item>
+                <Nav.Link href="/">Home</Nav.Link>
+              </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="/contact">Contact</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="/about">About</Nav.Link>
+                </Nav.Item>
+                
               </Nav>
-            </Navbar.Collapse>
-          </Navbar>
+              
 
-          <Route path="/" exact render={() => <MainPage 
-          image={this.state.home.image}/>} />
+          <Route path="/" exact render={() => <MainPage
+            image={this.state.home.image} />} />
           <Route path="/about" render={() => <About title={this.state.about.title} />} />
           <Route path="/contact" render={() => <Contact title={this.state.contact.title} />} />
-          
-          {/* <Footer /> */}
+          <Route path="/portfolio" render={() => <Portfolio title={this.state.portfolio.title} />} />
 
-        </Container>
+          {/* <Footer /> */}
       </Router>
+
     );
   }
 }
