@@ -7,8 +7,8 @@ function ProjectInfo(props) {
 
     return(
         <animated.div className="proCard-info" style={style}>
-            <p className="proCard-title">{props.title}</p>
-            <a href={props.link} target="_blank" rel="noopener noreferrer">View</a>
+            <p className="proCard-title text-white align-middle">{props.title}</p>
+           <p className="proCard-title align-middle "> <a href={props.link} target="_blank" rel="noopener noreferrer">View</a></p>
         </animated.div>
     );
 
