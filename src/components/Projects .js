@@ -5,7 +5,7 @@ import notetaker from '../images/notetaker.png';
 import weatherapp from '../images/weatherapp.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-
+import Col from 'react-bootstrap/Col';
 
 class Projects extends React.Component {
     constructor(props) {
@@ -30,7 +30,7 @@ class Projects extends React.Component {
                     id: 2,
                     title: 'Weather App',
                     img: weatherapp,
-                    link: 'https://github.com/garrettlove8/evverest',
+                    link: 'https://github.com/setaremehr/weatherApp.git',
                     selected: false
                 },
             ]
@@ -55,9 +55,11 @@ class Projects extends React.Component {
     }
     render() {
         return (
-            <Container fluid={true}>
+            <Container >
                 <Row className="justify-content-around">
-                    {this.eachItems(this.state.items)}
+                    <Col>
+                    <span >{this.eachItems(this.state.items)}</span>
+                    </Col>
                 </Row>
             </Container>
         );

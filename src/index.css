@@ -21,32 +21,33 @@ code {
 
 
 .proCard-image {
-  border-radius: 10px;
-  width: 300px;
-  height: 480px;
-  box-shadow: 0px 0px 3px 1px #ccc;
+  border-radius: 30px;
+  width: 290px;
+  height: 380px;
+  box-shadow: 10px 20px 20px 1px rgba(209, 174, 174, 0.44);
 }
 
 
 .proCard-info {
   margin-top: 10px;
-  min-height: 100px;
+  min-height: 20px;
 }
 
 
 .proCard-title {
-  font-size: 24px;
-  margin: 0px;
+  font-size: 19px;
+  margin: 20px;
+  padding: 20px;
 }
 
 
-.success-msg {
+.success {
   color: #57A773;
   padding: 10px 15px;
 }
 
 
-.err-msg {
+.err {
   color: #EE6352;
   padding: 10px 15px;
 }
