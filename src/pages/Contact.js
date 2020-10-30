@@ -14,13 +14,24 @@ class Contact extends React.Component {
             emailSent: null,
         }
     }
+
+     handleForm = (event) => {
+         const target = event.target;
+         const value = target.type;
+         const name = target.name;
+
+         this.setState({
+             [name]: value
+         })
+     }
+
     render() {
 
         return (
             <Container>
                 <Row>
-                <Form>
-                    <Form.Group controlId="formBasicEmail">
+                <Form onSubmit={this.handleSubmit}>
+                    <Form.Group >
                         <Form.Label className="text-white mt-5" htmlFor="email">Email address</Form.Label>
                         <Form.Control type="email" name="email" id="email" value={this.state.email} onChange={this.handleForm}  placeholder="Enter email" />
                         <Form.Text className="text-muted">
@@ -41,6 +52,9 @@ class Contact extends React.Component {
                         <Button className="d-inline-block" type="submit" variant="secondary" >
                             SEND
                         </Button>
+
+                        {this.state.emailSent === true && <p className="d-inline succsess" > Email Sent</p>}
+                        {this.state.emailSent === false && <p className="d-inline err" > Try Again </p>}
                 </Form>
                 </Row>
      </Container>
