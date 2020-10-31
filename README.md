@@ -1,8 +1,6 @@
 # React-Portfolio App
 * Personal Portfolio made with React.js
 
-# Navigate to website 
-* [![Netlify Status](https://api.netlify.com/api/v1/badges/f916bc46-9699-47e0-a1ad-a7ead5042f36/deploy-status)](https://app.netlify.com/sites/my-portfolio-setare/deploys)
 
 # Table of Contents 
 * [Installation](#installation)
