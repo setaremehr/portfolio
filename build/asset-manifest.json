@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8117a809.chunk.css",
+    "main.js": "/static/js/main.b549610d.chunk.js",
+    "main.js.map": "/static/js/main.b549610d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.09d8741f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.09d8741f.js.map",
+    "static/css/2.95f25948.chunk.css": "/static/css/2.95f25948.chunk.css",
+    "static/js/2.44417576.chunk.js": "/static/js/2.44417576.chunk.js",
+    "static/js/2.44417576.chunk.js.map": "/static/js/2.44417576.chunk.js.map",
+    "static/js/3.af68fd1b.chunk.js": "/static/js/3.af68fd1b.chunk.js",
+    "static/js/3.af68fd1b.chunk.js.map": "/static/js/3.af68fd1b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.95f25948.chunk.css.map": "/static/css/2.95f25948.chunk.css.map",
+    "static/css/main.8117a809.chunk.css.map": "/static/css/main.8117a809.chunk.css.map",
+    "static/js/2.44417576.chunk.js.LICENSE.txt": "/static/js/2.44417576.chunk.js.LICENSE.txt",
+    "static/media/lyric.7121fc43.jpeg": "/static/media/lyric.7121fc43.jpeg",
+    "static/media/notetaker.9488bf54.png": "/static/media/notetaker.9488bf54.png",
+    "static/media/weatherapp.dd2c6706.png": "/static/media/weatherapp.dd2c6706.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09d8741f.js",
+    "static/css/2.95f25948.chunk.css",
+    "static/js/2.44417576.chunk.js",
+    "static/css/main.8117a809.chunk.css",
+    "static/js/main.b549610d.chunk.js"
+  ]
+}
