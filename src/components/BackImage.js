@@ -18,7 +18,7 @@ function BackImage (props) {
     alt="myPic"
   />
   <Media.Body className="justify-content-center py-5 ml-5 mt-5">
-    <h5 className="text-muted">Hi! I'm Setare 👋🏼</h5>
+    <h5 className="text-muted">Hi! I'm Setare MainPage.js</h5>
     <p className="text-white pline">
     My name is Setare Mehr I'm a 31 year old Full Stack Web Developer based in California ☀️
     I describe myself as a passionate developer who loves coding, open source, and the web platform ❤️.
